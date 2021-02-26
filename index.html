@@ -1,1 +1,31 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <!--META-->
+    <head>
+        <title>Incremental Game</title>
+        <link rel="stylesheet" href="./CSS/MainPage.css">
+        <link rel="stylesheet" href="./CSS/DarkMode.css">
+
+        <script src="./Javascript/Game.js"></script>
+        <script src="./Javascript/SaveFile.js"></script>
+        <script src="./Javascript/MainPage.js"></script>
+        <script src="./Javascript/TextUpdater.js"></script>
+    </head>
+
+    <!--BODY-->
+    <body>
+        <div class="currency">
+            <div>
+                <p>You have <span id="currencyText">0</span> currency!</p>
+                <p>You are gaining <span id="cpsText">0</span> currency/second!</p>
+                <div style="display: flex; justify-content: center;">
+                    <button id="currencyButton" type="button" onclick="Game.click()">Click Me!</button>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" style="position: fixed; bottom: 0px;" onclick="eraseGame()">Erase progress!!!</button>
+        <button type="button" style="position: fixed; bottom: 100px;" onclick="saveGame()">Save progress</button>
+        <button type="button" style="position: fixed; bottom: 50px" onclick="loadGame()">Load progress</button>
+    </body>
+</html>
