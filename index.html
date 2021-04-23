@@ -14,6 +14,9 @@
 
     <!--BODY-->
     <body>
+
+        <!-- The clicking stuff -->
+
         <div class="currency">
             <div>
                 <p>You have <span id="currencyText">0</span> currency!</p>
@@ -24,8 +27,35 @@
             </div>
         </div>
 
-        <button type="button" style="position: fixed; bottom: 0px;" onclick="eraseGame()">Erase progress!!!</button>
-        <button type="button" style="position: fixed; bottom: 100px;" onclick="saveGame()">Save progress</button>
-        <button type="button" style="position: fixed; bottom: 50px" onclick="loadGame()">Load progress</button>
+        <!-- Building stuff -->
+        <div class="buildings">
+            <table>
+                <tr>
+                    <th>Waifu!</th>
+                    <th>Quantity</th>
+                    <th>Info</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Pekora</p>
+                        <p>Quantity: <span>0</span></p>
+                    </td>
+                    <td>
+                        <p>Cost: <span>15</span> currency!</p>
+                        <button type="button">Buy!</button>
+                    </td>
+                    <td>
+                        <p>Each Pekora produces -1 currency.</p>
+                        <p>A total of <span>0</span> Pekoras producing <span>0</span> currency.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Save file stuff-->
+        <button type="button" style="position: fixed; bottom: 5px; left: 5px;" onclick="eraseGame()">Erase progress!!!</button>
+        <button type="button" style="position: fixed; bottom: 100px; left: 5px;" onclick="saveGame()">Save progress</button>
+        <button type="button" style="position: fixed; bottom: 50px; left: 5px;" onclick="loadGame()">Load progress</button>
     </body>
 </html>
